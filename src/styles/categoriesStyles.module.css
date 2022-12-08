@@ -1,0 +1,110 @@
+#categoriesContainer {
+  border: 1px dotted rgb(208, 208, 208);
+  position: absolute;
+  top: 8em;
+  right: 0.5em;
+  bottom: 0.5em;
+  left: 0.5em;
+  content-visibility: auto;
+}
+#dragable {
+  width: 100vw;
+  height: 4rem;
+  position: absolute;
+  z-index: 1;
+  top: 5em;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+#dragable .initialCategory {
+  background-color: white;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  border: 1px dotted rgb(122, 122, 122);
+  border-radius: 0.3em;
+}
+#dragable #dragzone {
+  width: 100%;
+  height: 100%;
+  cursor: move;
+}
+.nodesArea button {
+  background-color: #cdd6de;
+  border: none;
+  padding: 0.5em;
+  color: white;
+  width: 7em;
+}
+button:hover {
+  background-color: #929293;
+}
+.uparrow {
+  position: absolute;
+  bottom: 0.6em;
+  left: 47%;
+  z-index: 2;
+}
+.downarrow {
+  position: relative;
+  top: 2.25em;
+  left: 0;
+  z-index: 2;
+}
+.rightarrow {
+  position: absolute;
+  left: 0.7em;
+  height: 7em;
+  width: 2.2em !important;
+  top: 50%;
+}
+.leftarrow {
+  position: absolute;
+  right: 0.7em;
+  height: 7em;
+  width: 2.2em !important;
+  top: 50%;
+}
+i {
+  cursor: pointer;
+  margin: 0.2em;
+}
+#addCategory {
+  background-color: #cdd6de;
+  padding: 0.25em;
+  border-radius: 50%;
+  font-size: small;
+  color: white;
+}
+#deleteCategory {
+  background-color: red;
+  padding: 0.2em 0.4em;
+  border-radius: 50%;
+  font-size: small;
+  color: white;
+}
+#categoryTitle {
+  padding: 0.7rem 1rem;
+  margin: 0.4em;
+  background-color: white;
+  font-size: 0.8em;
+  width: 7em;
+  border: 1px solid rgb(233 233 233);
+  color: white;
+  font-weight: bold;
+}
+.category {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.childCategories {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.input {
+  width: inherit;
+  border: none;
+  outline: none;
+}

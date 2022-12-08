@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 3em 1em 3em;
+}
+.text{
+    font-size: 1.25em;
+    font-weight: 500;
+}
+.badge{
+    background-color: #FFC248;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+}
+.header button{
+    font-weight: bold;
+    border: none;
+    padding: 0.7em;
+    margin: 0 0.1em;
+    color:#CDD6DE;
+    cursor:pointer;
+    background-color: white;
+}
+.header button:hover{
+    color: white;
+    background-color: #CDD6DE;
+}
+
+.listButton {
+    background-color: #7681E7 !important;
+    color: white !important;
+    
+}
+.tooltip {
+  position: relative;
+}
+.scale {
+  width: 3.5em;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #CDD6DE;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 140%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #CDD6DE transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
