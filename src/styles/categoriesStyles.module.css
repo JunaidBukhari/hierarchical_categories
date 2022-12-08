@@ -93,7 +93,7 @@ i {
 }
 .category {
   position: relative;
-  margin: 0 auto;
+  margin: 0 2em;
   display: flex;
   justify-content: center;
   align-items: center;
